@@ -8,6 +8,15 @@ public class CuentaBancaria {
     private double reajusteAnual;
     public Cliente cliente;
 
+    public CuentaBancaria(int nuemeroDeCuenta, String fechaDeApertura, double saldo, int lineaDegiro, double reajusteAnual, Cliente cliente) {
+        this.nuemeroDeCuenta = nuemeroDeCuenta;
+        this.fechaDeApertura = fechaDeApertura;
+        this.saldo = saldo;
+        this.lineaDegiro = lineaDegiro;
+        this.reajusteAnual = reajusteAnual;
+        this.cliente = cliente;
+    }
+
     public int getNuemeroDeCuenta() {
         return this.nuemeroDeCuenta;
     }
@@ -46,4 +55,17 @@ public class CuentaBancaria {
 
     public void setReajusteAnual(double aReajusteAnual) {
         this.reajusteAnual = aReajusteAnual;
-    }}
+    }
+
+    @Override
+    public String toString() {
+        return "CuentaBancaria{" +
+                "nuemeroDeCuenta=" + nuemeroDeCuenta +
+                ", fechaDeApertura='" + fechaDeApertura + '\'' +
+                ", saldo=" + saldo +
+                ", lineaDegiro=" + lineaDegiro +
+                ", reajusteAnual=" + reajusteAnual +
+                ", cliente=" + cliente +
+                '}';
+    }
+}

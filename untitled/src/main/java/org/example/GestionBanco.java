@@ -2,9 +2,13 @@ package org.example;
 
 public class GestionBanco {
 
-    public SucursalBancaria sucursalesBancarias = new SucursalBancaria();
+   // public SucursalBancaria sucursalesBancarias = new SucursalBancaria();
+
+    public GestionBanco() {
+    }
 
     public void agregarCLiente() {
+
         throw new UnsupportedOperationException();
     }
 
@@ -23,4 +27,5 @@ public class GestionBanco {
     public void ObtenerCuentasCorrientesSucursal() {
         throw new UnsupportedOperationException();
     }
+
 }
